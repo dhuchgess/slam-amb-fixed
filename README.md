@@ -9,12 +9,12 @@
 
 ## Process:
 
-1. Rename the **config_sample.env** to **config.env** and fill it up.
-2. Add **credentials.json** and **token.pickle**.
-3. Add three secrets: `HEROKU_API_KEY`, `HEROKU_APP_NAME`, `HEROKU_EMAIL`, `CONFIG_FILE_URL`.
-4. Now Run the _WorkFlow_ from github.
-5. After finishing WorkFlow Deployment, check the log of your bot from Heroku.
-6. Bot will Start and immediately your app will be suspended!
-7. Don't worry. Delete that suspended app.
-8. Now go to github, run the workflow again.
-9. And check your heroku account....
+01. Rename the **config_sample.env** to **config.env** and fill it up.
+02. Add your **credentials.json** and **token.pickle**.
+03. Add four secrets: `CONFIG_FILE_URL`, `HEROKU_API_KEY`, `HEROKU_APP_NAME`, `HEROKU_EMAIL`.
+04. Now Run the **Master** branch _WorkFlow_ from github.
+05. After finishing WorkFlow Deployment, check the log of your bot from Heroku.
+06. Bot will Start and immediately your app will get suspension!
+07. Don't worry. Delete that suspended app.
+08. Now go to Github, run the WorkFlow again.
+09. And check your heroku account =) ....
