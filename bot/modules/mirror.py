@@ -347,6 +347,9 @@ def _mirror(bot, update, isTar=False, extract=False):
         else:
             mega_dl = MegaDownloadHelper()
             mega_dl.add_download(link, f'{DOWNLOAD_DIR}/{listener.uid}/', listener)
+    elif bot_utils.is_magnet(link):
+        sendMessage(f"⚠️🚫 Torrent mirror is Blocked‼️", bot, update)
+        LOGGER.info(f"Torrent mirror is Blocked!")
     else:
         ariaDlManager.add_download(link, f'{DOWNLOAD_DIR}/{listener.uid}/', listener, name)
         sendStatusMessage(update, bot)
